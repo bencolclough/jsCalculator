@@ -44,7 +44,7 @@ function five() {
         displayText="5";
     }
     else {
-        displayText += "6";
+        displayText += "5";
     }
     document.getElementById("results").innerText=displayText;
 }
@@ -135,9 +135,18 @@ function clearAll() {
     document.getElementById("results").innerText=displayText;
 }
 function equals() {
+    if (countDecimals(eval(displayText))>6) {
+        displayText = eval(displayText).toFixed(6);
+    }
+    else {
     displayText = eval(displayText);
+    }
     document.getElementById("results").innerText=displayText;
 }
 
-
+countDecimals = function(value) {
+    if (Math.floor(value) !== value)
+        return value.toString().split(".")[1].length || 0;
+    return 0;
+}
 
