@@ -2,11 +2,35 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>jsCalculator by bencol</title>
-    <script src="scripts.js"></script>
+    <title>jsCalculator by bencol</title>    
     <link rel="stylesheet" type="text/css" href="output.css">
-  </head>
-  <body>
-  
-  </body>
+</head>
+<body>
+        <div class="flex justify-center">
+            <div class="grid justify-center text-center max-w-lg w-full md:w-3/4 lg:w-1/2 grid-cols-5 gap-4 mr-4 ml-4 mt-10 font-mono text-3xl ">
+                <div id="results" class = "bg-gray-900 text-white h-32 flex items-center justify-center col-span-5"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="seven" onclick="seven()" value="7" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="eight" onclick="eight()" value="8" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="nine" onclick="nine()" value="9" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="backspace" onclick="backspace()" value="C" class ="bg-gray-500 hover:bg-gray-600 h-20 text-gray-800 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="clearAll" onclick="clearAll()" value="AC" class ="bg-gray-500 hover:bg-gray-600 h-20 text-gray-800 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="four" onclick="four()" value="4" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="five" onclick="five()" value="5" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="six" onclick="six()" value="6" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="multiply" onclick="multiply()" value="*" class ="bg-gray-500 hover:bg-gray-600 h-20 text-gray-800 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="divide" onclick="divide()" value="/" class ="bg-gray-500 hover:bg-gray-600 h-20 text-gray-800 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="one" onclick="one()" value="1" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="two" onclick="two()" value="2" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="three" onclick="three()" value="3" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="add" onclick="add()" value="+" class ="bg-gray-500 hover:bg-gray-600 h-20 text-gray-800 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="subtract" onclick="subtract()" value="-" class ="bg-gray-500 hover:bg-gray-600 h-20 text-gray-800 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="zero" onclick="zero()" value="0" class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center"><input type ="button" id="point" onclick="point()" value="." class ="bg-gray-300 hover:bg-gray-400 h-20 text-gray-700 w-full"></div>
+                <div class = "flex items-center justify-center col-span-3"><input type ="button" id="equals" onclick="equals()" value="=" class ="bg-gray-500 hover:bg-gray-600 h-20 text-gray-800 w-full"></div>
+                
+            </div>
+        </div>
+</body>
+<script src="scripts.js"></script>
+
 </html>
