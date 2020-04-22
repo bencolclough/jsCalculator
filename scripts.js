@@ -94,8 +94,8 @@ function zero() {
     document.getElementById("results").innerText=displayText;
 }
 function point() {
-    if (displayText === "0") {
-        displayText=".";
+    if (char_count(displayText, ".")>0) {
+        
     }
     else {
         displayText += ".";
@@ -151,9 +151,21 @@ function equals() {
     
 }
 
-countDecimals = function(value) {
+function countDecimals(value) {
     if (Math.floor(value) !== value)
         return value.toString().split(".")[1].length || 0;
     return 0;
 }
 
+function char_count(str, letter) 
+{
+ var letter_Count = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      letter_Count += 1;
+      }
+  }
+  return letter_Count;
+}
