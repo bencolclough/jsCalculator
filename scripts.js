@@ -169,3 +169,63 @@ function char_count(str, letter)
   }
   return letter_Count;
 }
+
+document.addEventListener("keypress", function onEvent(event) {
+    if (event.key === "1") {
+        one();
+    }
+    if (event.key === "2") {
+        two();
+    }
+    if (event.key === "3") {
+        three();
+    }
+    if (event.key === "4") {
+        four();
+    }
+    if (event.key === "5") {
+        five();
+    }
+    if (event.key === "6") {
+        six();
+    }
+    if (event.key === "7") {
+        seven();
+    }
+    if (event.key === "8") {
+        eight();
+    }
+    if (event.key === "9") {
+        nine();
+    }
+    if (event.key === "0") {
+        zero();
+    }
+    if (event.key === ".") {
+        point();
+    }
+    if (event.key === "+") {
+        add();
+    }
+    if (event.key === "-") {
+        subtract();
+    }
+    if (event.key === "*") {
+        multiply();
+    }
+    if (event.key === "/") {
+        divide();
+    }
+    
+    if (event.key === "Enter") {
+        equals();
+    }
+
+    if (event.key === "<") {
+        backspace();
+    }
+
+    if (event.key === ">") {
+        clearAll();
+    }
+});
