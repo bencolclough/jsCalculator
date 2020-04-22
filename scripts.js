@@ -135,13 +135,20 @@ function clearAll() {
     document.getElementById("results").innerText=displayText;
 }
 function equals() {
-    if (countDecimals(eval(displayText))>6) {
+    if (displayText.includes("/0")) {
+        displayText = "0"
+        warningText = "Cannot divide by 0"
+        document.getElementById("results").innerText=warningText;
+    }
+    else if (countDecimals(eval(displayText))>6) {
         displayText = eval(displayText).toFixed(6);
+        document.getElementById("results").innerText=displayText;
     }
     else {
     displayText = eval(displayText);
-    }
     document.getElementById("results").innerText=displayText;
+    }
+    
 }
 
 countDecimals = function(value) {
